@@ -1,0 +1,77 @@
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;          /* Permite que las tarjetas pasen a una nueva fila */
+  gap: 20px;                /* Espacio entre tarjetas */
+  justify-content: center; /* Centra las tarjetas en la fila (especialmente la última) */
+  margin-bottom: 3rem;      /* Espacio con el footer */
+}
+
+/* Título principal */
+h1 {
+  margin-top: 2rem;   /* Espacio desde el header */
+  text-align: center; /* Centrado horizontal */
+}
+
+/* Estilo individual de cada tarjeta */
+.card {
+  border: none; /* Sin bordes visibles */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animación al hacer hover */
+  overflow: hidden; /* Oculta contenido que se sale */
+  width: 300px; /* Ancho fijo */
+}
+
+/* Efecto hover (cuando se pasa el mouse por encima) */
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
+}
+
+/* Imagen del producto dentro de la tarjeta */
+.product-image {
+  width: 100%;              /* Que ocupe todo el ancho de la tarjeta */
+  height: 200px;            /* Alto fijo */
+  object-fit: contain;      /* Mantiene proporciones sin recortar */
+  object-position: center;  /* Centra la imagen */
+  background-color: #fff;   /* Fondo blanco (relleno si la imagen no cubre) */
+  padding: 10px;            /* Espacio interno para no pegar la imagen al borde */
+}
+
+/* Contenido textual de la tarjeta */
+.card-body {
+  padding: 15px;      /* Espacio interior */
+  text-align: center; /* Centra el texto */
+}
+
+/* Título del producto */
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Descripción del producto */
+.card-text {
+  color: #555;             /* Color gris oscuro */
+  margin-bottom: 15px;
+}
+
+/* Precio del producto */
+.card-price {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Botones (carrito y favoritos) */
+.btn {
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.btn:hover {
+  transform: scale(1.1);      /* Aumenta ligeramente el tamaño */
+  background-color: #28a745;  /* Verde intenso */
+  color: white;               /* Texto blanco */
+}

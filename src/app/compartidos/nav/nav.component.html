@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm" style="background-color: fff4e6;">
+  <div class="container-fluid">
+    <img src="/joystick.jpeg" alt="Logo3" class="navbar-logo">
+    
+    <a class="navbar-brand ms-2" [routerLink]="['/inicio']">Tienda de Ivancin</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/inicio']">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/productos']">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/ofertas']">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3">
+        <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/carrito']">
+            <i class="bi bi-cart-fill"></i>
+            <span class="badge bg-danger" *ngIf="cantidadProductos > 0">{{ cantidadProductos }}</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/favorito']">
+            <i class="bi bi-heart-fill text-danger"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

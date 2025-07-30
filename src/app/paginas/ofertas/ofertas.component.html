@@ -1,0 +1,28 @@
+
+
+<h1>Ofertas Únicas</h1>
+<div class="card-container">
+<ng-container *ngIf="Ofertas && Ofertas.length">
+    <ng-container *ngFor="let producto of Ofertas">
+        <div *ngIf="producto.disponibilidad" class="card">
+            <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="product-image">
+            <h2>{{ producto.nombre }}</h2>
+            <p>{{ producto.descripcion }}</p>
+            <p> Precio: {{ producto.precio | currency }}</p>
+            <!-- Contenedor para los botones centrados y uno al lado del otro -->
+          <div class="d-flex justify-content-center align-items-center">
+            <!-- Botón Agregar al Carrito -->
+            <button type="button" class="btn btn-outline-primary me-2" (click)="agregar(producto)">
+              <i class="bi bi-cart-plus"></i>
+            </button>
+
+            <!-- Botón Agregar a Favoritos -->
+            <button type="button" class="btn btn-outline-danger" (click)="agregarAFav(producto)">
+              <i class="bi bi-heart"></i>
+            </button>
+          </div>
+
+        </div>
+    </ng-container>
+</ng-container>
+</div>

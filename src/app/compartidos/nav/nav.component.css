@@ -1,0 +1,66 @@
+/* Fondo oscuro con sombra sutil */
+.navbar {
+  background-color: #1e1e2f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del logo */
+.navbar-logo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Enlaces de navegación */
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #c75391; /* Rosa vibrante, estilo juguetería */
+}
+
+/* Íconos de carrito y favoritos */
+.bi-cart-fill,
+.bi-heart-fill {
+  font-size: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.bi-cart-fill:hover,
+.bi-heart-fill:hover {
+  color: #c75391;
+}
+
+/* Badge (cantidad de productos) */
+.badge-danger {
+  background-color: #c75391;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+/* Input de búsqueda */
+form input[type="search"] {
+  border-radius: 20px;
+  padding: 5px 12px;
+  border: none;
+  outline: none;
+}
+
+form button[type="submit"] {
+  border-radius: 20px;
+  margin-left: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #c75391;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #c75391;
+  color: #ffffff;
+}

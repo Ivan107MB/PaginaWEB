@@ -1,0 +1,10 @@
+.carousel-inner img {
+  height: 600px; /* Aumenta la altura del carrusel */
+  object-fit: cover;
+  object-position: 50% 20%; /* Puedes ajustar según el enfoque que prefieras */
+}
+
+.carousel-inner {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
